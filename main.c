@@ -6,6 +6,17 @@
 #include<ctype.h>
 #include<sys/stat.h>
 
+char *mystrdup(const char *s)
+{
+	char *ds;
+
+	if(!(ds=malloc(strlen(s)+1))) return NULL;
+
+	strcpy(ds, s);
+
+	return ds;
+}
+
 void usage(const char *cmd, int st)
 {
 	fprintf(stderr, "Usage: %s <file-name> <output-file-name>", cmd);
@@ -14,7 +25,7 @@ void usage(const char *cmd, int st)
 
 char *mk_var_prefix(const char *fname)
 {
-	char *prefix=strdup(fname);
+	char *prefix=mystrdup(fname);
 	char *p=prefix;
 
 	while(*p) {
