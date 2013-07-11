@@ -28,7 +28,7 @@ char *mk_var_prefix(const char *fname)
 	char *prefix;
 	char *p;
 
-	if(!strcmp(fname, "-")) 	return mystrdup("stdin");
+	if(!strcmp(fname, "-")) return mystrdup("stdin");
 	else prefix=mystrdup(fname);
 
 	p=prefix;
