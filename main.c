@@ -1,4 +1,8 @@
+
+// Disable warning about deprecated functions in MSVC
+#if defined(MSC_VER)
 #pragma warning(disable : 4996)
+#endif
 
 #include<stdio.h>
 #include<stdlib.h>
