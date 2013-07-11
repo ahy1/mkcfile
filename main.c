@@ -1,6 +1,6 @@
 
 // Disable warning about deprecated functions in MSVC
-#if defined(MSC_VER)
+#if defined(_MSC_VER)
 #pragma warning(disable : 4996)
 #endif
 
