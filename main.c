@@ -86,7 +86,7 @@ void mkcfile(const char *fname, const char *outfname)
 
 	fprintf(outfp, "\n};\n\n");
 
-	fprintf(outfp, "size_t %s_len=%d;\n\n", var_prefix, size);
+	fprintf(outfp, "size_t %s_len=%lu;\n\n", var_prefix, (unsigned long)size);
 
 	if(outfp!=stdout) fclose(outfp);
 	if(infp!=stdin) fclose(infp);
