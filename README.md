@@ -3,7 +3,7 @@
 
 ## Usage
 
-*mkcfile* takes 2 optional parameters (input-file and output-file). If not specified, standard input and standard output are used. The file name will then be - (dash), which is converted to _ (underscore) according to the previously specified rules.
+*mkcfile* takes 2 optional parameters (input-file and output-file). If not specified, standard input and standard output are used. The file name will then be - (dash), which is converted to _ (underscore) according to the rules specified below.
 
 ## Description
 
@@ -17,7 +17,7 @@ Variable naming is as follows:
 
 Real file names are first changed to resemble a C variable like this:
 * Any character not allowed i C variables are replaced by _ (underscore)
-* If file name starts with a number it is replaced by _ (underscore)
+* If file name starts with a digit or othe non-alphanumeric character the character is replaced by _ (underscore)
 
 If no file name or - (dash) is specified, filename becomes stdin.
 
