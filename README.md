@@ -17,7 +17,7 @@ Variable naming is as follows:
 
 Real file names are first changed to resemble a C variable like this:
 * Any character not allowed i C variables are replaced by _ (underscore)
-* If file name starts with a digit or othe non-alphanumeric character the character is replaced by _ (underscore)
+* If file name starts with a digit or other non-alphanumeric character the character is replaced by _ (underscore)
 
 If no file name or - (dash) is specified, filename becomes stdin.
 
